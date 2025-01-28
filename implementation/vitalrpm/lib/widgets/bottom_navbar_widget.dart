@@ -55,11 +55,10 @@ class CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
     }
   }
 
-  // Navigation method for doctor user
   void _navigateDoctor(int index) {
     if (widget.currentPage == index) {
       return;
-    } // don't navigate if already on the selected item
+    }
     switch (index) {
       case 0:
         Navigator.pushReplacement(
